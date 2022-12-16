@@ -1,0 +1,13 @@
+<head>
+    <link href="{{url_for('try', path='/styles.css')}}" rel="stylesheet" />
+    <!--'url_for' sonrasinda belirtilen isim(try) main.py icinde yazilan app.mount("/templates/static",StaticFiles)
+     icinde 'name' olarak belirtilen degiskenle cagiriliyor-->
+</head>
+<body>
+    <div class="tpl_product">
+        <div class="tpl_title">{{title}}</div>
+        <div class="tpl_description">{{description}}</div>
+        <div class="tpl_price">{{price}}</div>
+    </div>
+</body>
+
